@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+       <nav>
+        <h2><a href="#" class="logo"> <#<span>></span></a></h2>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Education</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       </nav>
+       <div class="header-text">
+        <p> <span>STUDENT</span>/INTERN</p>
+        <h1>Hi , I'm <span>Shwetha</span><br><span> Acharya</span> from NITTE<span>.</span></h1>
+       </div>
+    </div>
+   </div> 
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="back1.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a third-year Computer Science and Engineering student, I have better knowledge about algorithms, data structures, and programming languages. My  programming skills include proficiency in both front-end and back-end development. Through various projects and internships, I have enchanced my problem-solving abilities. Engaging in extracurricular activities like coding competitions  has further enriched my experiences in this field. As I approach my final year, I am actively exploring research opportunities and considering my options for post-graduation plans in the dynamic field of computer science.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML & CSS</span><br>Fronted development</li>
+                        <li><span>JAVA & PYTHON</span><br>web development</li>
+                        <li><span>C PROGRAMING</span><br>App development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Education</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>School</h2>
+                <p>Poorna Prajna English Medium School,Udupi </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>Pre-University</h2>
+                <p>Poorna Prajna Pre-university College,Udupi</p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>Engineering</h2>
+                <p>NMAM Institute of Technology,Nitte </p>
+                
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="vid.jpg" >
+                <div class="layer">
+                    <h3>Hostel Management System</h3>
+                    <p>The Hostel Management System is a software solution designed to streamline and automate the administrative processes of managing a hostel, including room allocation, student registration, and attendance tracking.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="auto.jpg" >
+                <div class="layer">
+                    <h3>Automated Trolley</h3>
+                    <p>An automated trolley is a self-propelled, robotic device equipped with sensors and navigation technology that allows it to autonomously transport goods or items within a specified environment</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+            
+        </div> 
+      
+        
+    </div>
+   </div>
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fas fa-paper-plane"></i>acharyashwetha@gmail.com</p>
+                <p ><i class="fas fa-phone-square-alt"></i>12154544872</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="My Resume.pdf" download class="btn">Resume</a>
+            </div>
+        </div>
+    </div> 
+</div>
+  
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    
+    }
+   </script>
+</body>
+</html>
